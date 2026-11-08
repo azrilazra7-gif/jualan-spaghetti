@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Bella - Spageti Premium Lezat</title>
+    <!-- Hubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container navbar">
+            <h1 class="logo">🍝 spaghetti seruput</h1>
+            <div class="cart-icon" onclick="toggleCartModal()">
+                🛒 Keranjang <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Spageti Autentik Rasa Bintang Lima</h2>
+            <p>Dibuat dari pasta pilihan dengan saus rahasia buatan rumah yang kaya rempah.</p>
+            <a href="#menu" class="btn-primary">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container menu-section">
+        <h2 class="section-title">Menu Favorit Kami</h2>
+        <div class="product-grid" id="product-list">
+            <!-- Produk akan dimuat otomatis lewat JavaScript -->
+        </div>
+    </section>
+
+    <!-- Modal Keranjang Belanja -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="toggleCartModal()">&times;</span>
+            <h2>Keranjang Belanja Anda</h2>
+            <div id="cart-items" class="cart-items-container">
+                <p>Keranjang masih kosong.</p>
+            </div>
+            <div class="cart-summary">
+                <h3>Total: <span id="cart-total">Rp 0</span></h3>
+            </div>
+            
+            <!-- Form Checkout -->
+            <div class="checkout-form">
+                <h3>Informasi Pengiriman</h3>
+                <input type="text" id="buyer-name" placeholder="Nama Lengkap" required>
+                <input type="text" id="buyer-phone" placeholder="Nomor WhatsApp (Contoh: 08123456789)" required>
+                <textarea id="buyer-address" placeholder="Alamat Lengkap Pengiriman..." required></textarea>
+                <button onclick="checkoutWhatsApp()" class="btn-checkout">Kirim Pesanan ke WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pasta Bella. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Hubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
