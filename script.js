@@ -2,24 +2,26 @@
 const products = [
     {
         id: 1,
-        name: "spaghetti seruput",
-        price: 15000,
+        name: "Spaghetti Seruput",
+        price: 7000,
         desc: "Spageti dengan saus daging sapi cincang kaya tomat segar dan rempah Italia.",
-        image: "https://images.unsplash.com/photo-1621996346565-e3d5d6281298?auto=format&fit=crop&w=500&q=80"
+        image:"https://azrilazra7-gif.github.io/jualan-spaghetti/foto%20produk.jpeg"
+
     },
     {
         id: 2,
         name: "Spaghetti Carbonara",
-        price: 15000,
+        price: 7000,
         desc: "Pasta creamy gurih dengan keju parmesan berkualitas dan potongan smoked beef.",
-        image: "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=500&q=80"
+        image:"https://azrilazra7-gif.github.io/jualan-spaghetti/foto%20produk%202.jpeg"
+
     },
     {
         id: 3,
         name: "Spaghetti Aglio Olio",
-        price: 15000,
+        price: 7000,
         desc: "Spageti pedas ringan dengan minyak zaitun, bawang putih, cabai kering, dan potongan sosis.",
-        image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80"
+        image: "https://azrilazra7-gif.github.io/jualan-spaghetti/foto%20produk%203.jpeg"
     }
 ];
 
